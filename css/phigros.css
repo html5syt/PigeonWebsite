@@ -1,0 +1,223 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.section {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2;
+	letter-spacing: 1px;
+	text-shadow: 0 0 3px black;
+}
+
+.section p {
+	text-indent: 4ch;
+}
+
+.section-1 {
+	background: url(../img/bg_M.png) no-repeat right center;
+	background-size: cover;
+	position: relative;
+}
+
+.section-1 .bg1 {
+	width: 80vw;
+	position: absolute;
+	left: 9vw;
+	bottom: 40vh;
+}
+.section-1 .bg2 {
+	width: 70vw;
+	position: absolute;
+	left: 9vw;
+	bottom: calc(40vh - 10vw);
+}
+.section-1 .store-list {
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	width: 100%;
+}
+
+.section-2 {
+	background-image: url(../img/bg3.png);
+}
+
+.section-2 p {
+	display: inline-block;
+	text-align: left;
+	width: 80%;
+}
+
+.section-2 img {
+	width: 40vmax;
+	margin-bottom: 30px;
+}
+
+.section-2 {
+	display: block;
+	float: right;
+	text-align: left;
+}
+
+.section-3 {
+	background-image: url(../img/bg4.png);
+	text-align: left;
+}
+
+.section-3 img {
+	width: 100%;
+	height: auto;
+}
+
+.section-4 {
+	background-image: url(../img/bg5.png);
+	position: relative;
+}
+.section-4.landscape img {
+	width: 100%;
+	height: auto;
+	max-width: 75vw;
+}
+.section-4.portrait img {
+	margin-left: 30px;
+	width: auto;
+	height: 100%;
+	max-height: 75vh;
+}
+.section-4.portrait .illustrator {
+	margin-left: 0;
+	width: auto;
+	height: 100%;
+	max-height: 60vh;
+	top: 15vh;
+	position: absolute;
+}
+
+.section-5 {
+	padding: 0;
+	background-image: url(../img/bg6.png);
+}
+.section-5a {
+	height: calc(100vh - 50px);
+	position: relative;
+}
+.section-5a > img {
+	height: auto;
+	width: 90vw;
+	margin: 30vh auto auto auto;
+}
+.sec-footer {
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+}
+.get-now img {
+	margin-left: 10px;
+	width: 150px;
+}
+.store-list a {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.store-list img {
+	width: 160px;
+	margin-top: auto;
+}
+
+/* control arrow */
+.fp-controlArrow {
+	border: none;
+	height: 10vmin !important;
+	width: 10vmin !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: all 0.5s;
+}
+.fp-controlArrow:hover {
+	background-color: rgba(255, 255, 255, .5);
+	transition: all 0.5s;
+}
+.fp-prev {
+	left: 0 !important;
+	background-image: url(../img/L.png);
+}
+.fp-next {
+	right: 0 !important;
+	background-image: url(../img/R.png);
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+	.section {
+		font-size: 1.4rem;
+	}
+
+	.section-1 {
+		background-image: url(../img/bg1_T.png);
+	}
+
+	.section-1 .bg1 {
+		width: 40vw;
+		bottom: 20vh;
+		left: 12vw;
+	}
+	.section-1 .bg2 {
+		width: 30vw;
+		bottom: 15vh;
+		left: 50vw;
+	}
+
+	.section-2 img {
+		width: 40vw;
+	}
+
+	.section-2 p {
+		width: 80%;
+	}
+
+	.section-5a > img {
+		width: 60vw;
+	}
+
+	.store-list a {
+		display: inline-block;
+		margin-top: 0;
+	}
+
+	.store-list img {
+		width: 200px;
+	}
+}
+
+/* mobile devices portrait mode */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	.section-1 {
+		background-image: url(../img/bg_M.png);
+	}
+
+	.section-1 .bg1 {
+		width: 80vw;
+		left: 9vw;
+		bottom: 40vh;
+	}
+	.section-1 .bg2 {
+		width: 70vw;
+		left: 9vw;
+		bottom: calc(40vh - 10vw);
+	}
+}

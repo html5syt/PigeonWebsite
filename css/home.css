@@ -1,0 +1,189 @@
+#character-bg {
+	width: 70vw;
+	position: absolute;
+	left: -9vw;
+	top: -13vw;
+	z-index: 1;
+}
+
+#character {
+	width: 40vw;
+	position: absolute;
+	left: 0;
+	top: 3vw;
+	z-index: 1;
+}
+
+.item-1 {
+	padding: 20px 25px;
+	background: url(../img/homebg.png) center no-repeat;
+	background-color: #32cdff;
+	color: white;
+	font-size: 30px;
+}
+
+#screen {
+	width: 100%;
+}
+
+.end {
+	background-color: #32cdff;
+}
+
+.item-3 {
+	background-color: #efefef;
+}
+
+.item-4 {
+	color: #ff8383;
+	font-size: 20px;
+	text-align: left;
+}
+
+.news-img {
+	float: left;
+	margin-top: -20px;
+	width: 100%;
+	height: 150px;
+	background: url(../img/news.png) right no-repeat;
+	background-size: 25%;
+	background-color: #ff8383;
+}
+
+.background-white {
+	position: relative;
+	margin-top: -15px;
+	width: 70%;
+	height: 145px;
+	background: white;
+}
+
+.content {
+	width: 97%;
+	height: 140px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 16px;
+	background-color: #efefef;
+}
+
+.follow {
+	text-align: right;
+	font-size: 16px;
+	color: black;
+}
+
+.follow > * {
+	display: inline-block;
+	margin-left: 0;
+}
+
+.follow > p > img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.follow > a > img {
+	height: 32px;
+	margin: 0;
+}
+
+/* section 1 */
+.section1 {
+	background: url(../img/character_mobile.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: calc(100vh - 50px);
+	overflow: hidden;
+	position: relative;
+	background-color: #efefef;
+}
+
+h1 {
+	font-family: 'CaviarDreams';
+	font-size: 9vw;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.introduction {
+	position: absolute;
+	z-index: 5;
+	text-align: right;
+	top: 30vh;
+	right: 0;
+}
+
+.describe {
+	font-size: 4.5vw;
+}
+
+/* news */
+.news-title {
+	color: black;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.news-date {
+	overflow-x: hidden;
+	white-space: nowrap;
+	padding-left: 5px;
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+	.section1 {
+		height: 45vw;
+		background-image: none;
+	}
+
+	h1 {
+		font-size: 5.5vw;
+	}
+
+	.introduction {
+		position: relative;
+		margin-top: 13vw;
+		top: 0;
+	}
+
+	.describe {
+		font-size: 2vw;
+	}
+
+	#character {
+		left: 10vw;
+		top: 3vw;
+	}
+
+	.item-1 {
+		font-size: 2.5vw;
+	}
+
+	.follow > a > img {
+		height: 45px;
+	}
+
+	#screen {
+		width: 98%;
+	}
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 72px;
+	}
+
+	.describe {
+		font-size: 28px;
+	}
+
+	.item-1 {
+		font-size: 32px;
+	}
+}

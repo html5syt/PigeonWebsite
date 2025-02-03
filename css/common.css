@@ -1,0 +1,243 @@
+/* custom font */
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('../font/CaviarDreams_Bold.ttf');
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	color: black;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Microsoft YaHei", "微软雅黑", DotumChe, Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	background-color: black;
+	--pink-color: rgb(255, 130, 130);
+	--lightgray-color: rgb(232, 232, 232);
+}
+
+#main {
+	background-color: white;
+}
+
+
+/* notification */
+.notification {
+	position: fixed;
+	z-index: 1200;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: none;
+}
+
+.notification a {
+	color: black;
+}
+
+.notification a:hover {
+	color: black;
+}
+
+/* font sizes */
+.dropdown-item {
+	font-size: 1.2rem;
+}
+
+/* icons */
+.icon-span {
+	vertical-align: middle;
+}
+
+/* form submission feedback */
+form .feedback {
+	margin-top: 3px;
+	background-color: white;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+/* form */
+form .form-control {
+	font-weight: bold;
+	font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+form {
+	font-size: 20px;
+}
+
+form .btn {
+	font-size: 18px;
+}
+
+/* nav bar */
+#main > .navbar {
+	z-index: 10;
+	background-color: white;
+	font-size: 1.2em;
+	box-shadow: 0 0 10px black;
+	padding: 0;
+	--nav-height: 50px;
+}
+#main > .navbar > .container {
+	position: relative;
+}
+.pigeon-logo {
+	background-color: #323232;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: var(--nav-height);
+}
+.pigeon-logo > img {
+	margin: auto;
+	width: 160px;
+}
+.nav-link {
+	color: black !important;
+	transition: text-shadow 0.2s;
+}
+.nav-link:hover {
+	text-shadow: 0 0 3px gray;
+	transition: text-shadow 0.2s;
+}
+.navbar-toggler {
+	margin-right: 60px;
+}
+.language-logo {
+	background-color: #323232;
+	height: var(--nav-height);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* pagination */
+.pagination {
+	justify-content: center;
+}
+
+/* badge */
+.badge {
+	font-size: 16px;
+}
+
+/* center an item */
+.item-centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* gallery */
+.carousel-indicators {
+	margin: 0;
+}
+
+.carousel-indicators .active {
+	background-color: #207dcb;
+}
+
+.carousel-inner img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.carousel-indicators > li {
+	height: 6px;
+	width: 60px;
+	cursor: pointer;
+	background-color: white;
+	opacity: .8;
+	margin: auto 5px;
+}
+
+/* footer */
+footer {
+	font-size: 16px;
+	background-color: rgb(51, 51, 51);
+	color: white;
+	line-height: 1.5;
+	text-align: left;
+	letter-spacing: 0;
+}
+
+footer b, footer a {
+	color: white;
+	display: block;
+	margin-top: 5px;
+}
+
+footer a:hover {
+	color: white;
+	text-shadow: 0 0 3px white;
+}
+
+footer .contact a {
+	display: inline-block;
+	height: 50px;
+}
+
+footer .contact a img {
+	height: 100%;
+	width: auto;
+}
+
+.footer {
+	background: black;
+}
+
+.footer a {
+	display: inline;
+	color: #939393 !important;
+}
+
+#footer-icp {
+	color: #939393 !important;
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+	form {
+		font-size: 25px;
+	}
+
+	form .btn {
+		font-size: 20px;
+	}
+
+	.h1 {
+		font-size: 80px;
+		font-weight: bold;
+	}
+
+	.h2 {
+		font-size: 48px;
+	}
+
+	.section:first-child .container {
+		padding-top: 190px;
+	}
+
+	.pigeon-logo > img {
+		width: 200px;
+	}
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 3px gray;
+	color: initial;
+}
