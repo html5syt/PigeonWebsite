@@ -25,7 +25,7 @@
 }
 
 .section-1 {
-	background: url(../img/bg_M.png) no-repeat right center;
+	background: url(/PigeonWebsite/img/bg_M.png) no-repeat right center;
 	background-size: cover;
 	position: relative;
 }
@@ -50,7 +50,7 @@
 }
 
 .section-2 {
-	background-image: url(../img/bg3.png);
+	background-image: url(/PigeonWebsite/img/bg3.png);
 }
 
 .section-2 p {
@@ -71,7 +71,7 @@
 }
 
 .section-3 {
-	background-image: url(../img/bg4.png);
+	background-image: url(/PigeonWebsite/img/bg4.png);
 	text-align: left;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .section-4 {
-	background-image: url(../img/bg5.png);
+	background-image: url(/PigeonWebsite/img/bg5.png);
 	position: relative;
 }
 .section-4.landscape img {
@@ -106,7 +106,7 @@
 
 .section-5 {
 	padding: 0;
-	background-image: url(../img/bg6.png);
+	background-image: url(/PigeonWebsite/img/bg6.png);
 }
 .section-5a {
 	height: calc(100vh - 50px);
@@ -154,11 +154,11 @@
 }
 .fp-prev {
 	left: 0 !important;
-	background-image: url(../img/L.png);
+	background-image: url(/PigeonWebsite/img/L.png);
 }
 .fp-next {
 	right: 0 !important;
-	background-image: url(../img/R.png);
+	background-image: url(/PigeonWebsite/img/R.png);
 }
 
 /* responsive design */
@@ -168,7 +168,7 @@
 	}
 
 	.section-1 {
-		background-image: url(../img/bg1_T.png);
+		background-image: url(/PigeonWebsite/img/bg1_T.png);
 	}
 
 	.section-1 .bg1 {
@@ -207,7 +207,7 @@
 /* mobile devices portrait mode */
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
 	.section-1 {
-		background-image: url(../img/bg_M.png);
+		background-image: url(/PigeonWebsite/img/bg_M.png);
 	}
 
 	.section-1 .bg1 {
